@@ -7,7 +7,7 @@ class AppTextTheme {
 
   static TextStyle selectedInputChip = TextStyle(
     fontSize: 24,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     color: AppColor.blackText,
     letterSpacing: 0,
     fontWeight: FontWeight.w600,
@@ -16,7 +16,7 @@ class AppTextTheme {
 
   static TextStyle unselectedInputChip = TextStyle(
     fontSize: 24,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSerif,
     color: AppColor.primaryTextColor,
     letterSpacing: 0,
     fontWeight: FontWeight.w600,
@@ -25,15 +25,15 @@ class AppTextTheme {
 
   static TextStyle a11yHeading5 = TextStyle(
     fontSize: 30,
-    fontFamily: notoSerif,
+    fontFamily: AppStrings.notoSerif,
     color: AppColor.primaryTextColor,
     fontWeight: FontWeight.w600,
     height: 39,
   );
 
-  static TextStyle a11ybodyb2 = TextStyle(
+  static TextStyle a11yBodyb2 = TextStyle(
     fontSize: 28,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     color: AppColor.primaryTextColor,
     fontWeight: FontWeight.w400,
     letterSpacing: 0,
@@ -42,7 +42,7 @@ class AppTextTheme {
 
   static TextStyle a11yBodyB2 = TextStyle(
     fontSize: 24,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     color: AppColor.primaryTextColor,
     fontWeight: FontWeight.w400,
     height: 38.5,
@@ -50,7 +50,7 @@ class AppTextTheme {
 
   static TextStyle a11yBodyB2B = TextStyle(
     fontSize: 24,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     color: AppColor.primaryTextColor.withOpacity(0.92),
     letterSpacing: 0,
     fontWeight: FontWeight.w600,
@@ -59,7 +59,7 @@ class AppTextTheme {
 
   static TextStyle headingH3 = TextStyle(
     fontSize: 28,
-    fontFamily: notoSerif,
+    fontFamily: AppStrings.notoSerif,
     letterSpacing: -0.01,
     color: AppColor.primaryTextColor.withOpacity(0.74),
     fontWeight: FontWeight.w600,
@@ -67,7 +67,7 @@ class AppTextTheme {
 
   static TextStyle headingH2 = TextStyle(
       fontSize: 33,
-      fontFamily: notoSerif,
+      fontFamily: AppStrings.notoSerif,
       fontWeight: FontWeight.w600,
       height: 40,
       letterSpacing: -0.01,
@@ -86,7 +86,7 @@ class AppTextTheme {
 
   static TextStyle a11yCaptionC2 = TextStyle(
     fontSize: 18,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     fontWeight: FontWeight.w400,
     letterSpacing: 0,
     color: AppColor.primaryTextColor.withOpacity(0.74),
@@ -95,7 +95,7 @@ class AppTextTheme {
   static TextStyle a11yCaptionC1 = TextStyle(
     fontSize: 20,
     height: 30,
-    fontFamily: notoSans,
+    fontFamily: AppStrings.notoSans,
     fontWeight: FontWeight.w400,
     letterSpacing: 0,
     color: AppColor.primaryTextColor.withOpacity(0.92),

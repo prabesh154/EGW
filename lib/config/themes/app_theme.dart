@@ -6,7 +6,6 @@ import 'app_text_theme.dart';
 //   AppTheme._();
 
 //   static final ThemeData defaultTheme = ThemeData(
-//     fontFamily: "Asap",
 //     scaffoldBackgroundColor: AppColor.blackText,
 //     textTheme: TextTheme(
 //       a11yHeading5: AppTextTheme.a11yHeading5,
@@ -75,17 +74,16 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData defaultTheme = ThemeData(
-    // fontFamily: "Asap",
     scaffoldBackgroundColor: AppColor.blackText,
     textTheme: CustomTextTheme(
       selectedInputChip: AppTextTheme.selectedInputChip,
       unselectedInputChip: AppTextTheme.unselectedInputChip,
       a11yHeading5: AppTextTheme.a11yHeading5,
-      a11ybodyb2: AppTextTheme.a11ybodyb2,
       a11yBodyB2: AppTextTheme.a11yBodyB2,
       a11yBodyB2B: AppTextTheme.a11yBodyB2B,
       headingH3: AppTextTheme.headingH3,
       headingH2: AppTextTheme.headingH2,
+      a11ybodyb2: AppTextTheme.a11yBodyb2,
       sectionComponent: AppTextTheme.sectionComponent,
       bottomTab: AppTextTheme.bottomTab,
       selectedbottomTab: AppTextTheme.selectedbottomTab,

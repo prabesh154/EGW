@@ -1,3 +1,8 @@
-//Font Family:
-const notoSans = "Noto Sans";
-const notoSerif = "Noto Serif";
+class AppStrings {
+  AppStrings._();
+
+  //Font Family
+
+  static const notoSans = "Noto Sans";
+  static const notoSerif = "Noto Serif";
+}
