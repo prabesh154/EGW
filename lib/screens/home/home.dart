@@ -11,14 +11,15 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // const Text(
-            //   'Welcome Darry!',
-            //   style: TextStyle(color: Colors.amber),
-            // ),
-            // const SizedBox(
-            //   height: 5,
-            // ),
-            Text('Welcome Darry!', style: AppTextTheme.a11yHeading5),
+            const Text('Hello No Style'),
+            Text('Welcome captionC1', style: AppTextTheme.captionC1),
+            Text('Welcome captionC2', style: AppTextTheme.captionC2),
+            Text('Welcome selectedBottomTab!',
+                style: AppTextTheme.selectedBottomTab),
+            Text('Welcome bodyB1!', style: AppTextTheme.bodyB1),
+            Text('Welcome bodyB2!', style: AppTextTheme.bodyB2),
+            Text('Welcome a11yBodyB2!', style: AppTextTheme.a11yBodyB2),
+            Text('Welcome a11yCaptionC2!', style: AppTextTheme.a11yCaptionC2),
           ],
         ),
       ),
