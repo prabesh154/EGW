@@ -82,18 +82,19 @@ class ForYouScreen extends StatelessWidget {
               ),
             ),
             SliverList(
-              delegate: SliverChildBuilderDelegate(
-                (BuildContext context, int index) {
-                  return SectionComponent(
-                    title: sectionTitles[index],
-                    imageIcon: sectionImageIcons[index],
-                  );
-                },
-              ),
+              delegate:
+                  SliverChildBuilderDelegate((BuildContext context, int index) {
+                return SectionComponent(
+                  title: sectionTitles[index],
+                  imageIcon: sectionImageIcons[index],
+                );
+              }, childCount: sectionTitles.length),
             ),
-            const SliverToBoxAdapter(child: BottomNav()),
           ],
         ),
+        // const SliverToBoxAdapter(child: BottomNav()),
+
+        bottomNavigationBar: const BottomNav(),
       ),
     );
   }
