@@ -1,4 +1,4 @@
-import 'package:accessibility/screens/home/home.dart';
+import 'package:accessibility/screens/for_you/for_you.dart';
 import 'package:flutter/material.dart';
 
 import 'config/themes/app_theme.dart';
@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.defaultTheme,
-      home: const HomeScreen(),
+      // darkTheme: AppTheme.darkTheme,
+      // themeMode: ThemeMode.system,
+      home: const ForYouScreen(),
     );
   }
 }
