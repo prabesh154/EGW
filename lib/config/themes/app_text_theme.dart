@@ -23,7 +23,7 @@ class AppTextTheme {
   static TextStyle headingH3 = TextStyle(
     fontSize: 28,
     fontFamily: AppStrings.notoSerif,
-    letterSpacing: -0.01,
+    letterSpacing: -0.28,
     color: AppColor.primaryTextColor,
     fontWeight: FontWeight.w600,
   );

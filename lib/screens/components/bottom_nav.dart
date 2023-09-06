@@ -1,3 +1,5 @@
+import 'package:accessibility/config/constants/colors/app_color.dart';
+import 'package:accessibility/config/themes/app_text_theme.dart';
 import 'package:accessibility/screens/bible/bible.dart';
 import 'package:accessibility/screens/for_you/for_you.dart';
 import 'package:accessibility/screens/my_library/my_library.dart';
@@ -21,34 +23,37 @@ class _BottomNavState extends State<BottomNav> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: screens[currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: const Color.fromARGB(255, 110, 137, 224),
-        unselectedItemColor: const Color.fromARGB(255, 248, 248, 248),
-        currentIndex: currentIndex,
-        onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.clear),
-            // icon: Icon(currentIndex == 0 ? Icons.home : Icons.home_outlined),
-            label: 'For You',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.clear),
-            label: 'MyLibrary',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.clear),
-            label: 'Bible',
-          ),
-        ],
-      ),
+    return Container(
+      decoration: BoxDecoration(
+          border: Border(
+              top: BorderSide(width: 1, color: AppColor.primaryTextColor80))),
+      child: BottomNavigationBar(
+          backgroundColor: AppColor.blackText,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: AppColor.secondaryBlueTextColor,
+          unselectedItemColor: AppColor.primaryTextColor,
+          currentIndex: currentIndex,
+          onTap: (index) {
+            setState(() {
+              currentIndex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: SizedBox.shrink(),
+              label: 'For you',
+            ),
+            BottomNavigationBarItem(
+              icon: SizedBox.shrink(),
+              label: 'My Library',
+            ),
+            BottomNavigationBarItem(
+              icon: SizedBox.shrink(),
+              label: 'Bible',
+            ),
+          ],
+          selectedLabelStyle: AppTextTheme.a11yBodyB2,
+          unselectedLabelStyle: AppTextTheme.a11yBodyB2),
     );
   }
 }
